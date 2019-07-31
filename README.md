@@ -52,7 +52,7 @@ Nel 2019 si è evoluto, dando la possibilità di dividere in tematiche(progetti)
 4. Dopo preso mano con l'applicativo, accedere al pannello di amministrazione dei progetti e creare il primo vero progetto. Un           progetto per essere funzionale ha bisogno di tutti i campi obbligatori delle sue impostazioni, oltre ad almeno un baselayer inserito e un tipo di osservazione.
    Si può accedere alle impostazioni del progetto appena creato tramite l'apposito pulsante sulla griglia dei progetti;
 5. Configurato il progetto, va reso attivo, modificandolo dalla griglia;
-6. Creare i vari utenti(almeno un admin) e enti desiderati;
-7. Associare i nuovi utenti e enti, oltre ai comuni caricati, al nuovo progetto;
-7. Eseguire il login da utente Admin del nuovo progetto, caricarlo e, se desiderato, cancellare il progetto di esempio.
+6. Creare ed associare i vari  enti caricati/creati e l'utente di esempio al nuovo progetto;
+7. Eseguire il login con lo stesso utente al nuovo progetto, caricarlo e, se desiderato, cancellare il progetto di esempio;
 8. Eliminare i dati di esempio all'interno della tabella 'towns'
+
