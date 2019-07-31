@@ -55,3 +55,4 @@ Nel 2019 si è evoluto, dando la possibilità di dividere in tematiche(progetti)
 6. Creare i vari utenti(almeno un admin) e enti desiderati;
 7. Associare i nuovi utenti e enti, oltre ai comuni caricati, al nuovo progetto;
 7. Eseguire il login da utente Admin del nuovo progetto, caricarlo e, se desiderato, cancellare il progetto di esempio.
+8. Eliminare i dati di esempio all'interno della tabella 'towns'
