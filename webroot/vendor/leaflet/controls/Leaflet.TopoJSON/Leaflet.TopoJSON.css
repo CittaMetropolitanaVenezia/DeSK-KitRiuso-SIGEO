@@ -1,0 +1,21 @@
+.topojson-info {
+	padding: 6px 8px;
+	font: 12px/14px Arial, Helvetica, sans-serif;
+	background: black;
+	background: rgba(80, 80, 80, 0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 4px;
+	color: white;
+	display: none;
+}
+
+.topojson-info .underlined {
+	border-bottom: 1px solid white;
+	margin-bottom: 4px;
+	padding-bottom: 0px;
+	color: yellow;
+}
+
+.topojson-info .value {
+	font-weight: bold;
+}
