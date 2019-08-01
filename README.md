@@ -28,7 +28,8 @@ Nel 2019 si è evoluto, dando la possibilità di dividere in tematiche(progetti)
     sudo chmod -R 777 [nome_cartella]
     ```
 5. Aprire il file *database.php* all'interno della cartella Config e configurare la connessione al DB;
-6. Popolare la tabella 'towns' del DB con i dati delle città desiderate.
+6. Popolare la tabella 'towns' del DB con i dati delle città desiderate;
+7. Popolare la tabella 'comuni_dissolve' con un record avente come geometria l'union delle città caricare precedentemente.
 ## Utilizzo
 1. Accedere all'applicativo tramite l'url del server / sigeo:
     ```
@@ -68,5 +69,5 @@ Nel 2019 si è evoluto, dando la possibilità di dividere in tematiche(progetti)
 
 7. Eseguire il login con lo stesso utente al nuovo progetto, caricarlo e, se desiderato, cancellare il progetto di esempio;
 
-8. Eliminare i dati di esempio all'interno della tabella 'towns'
+8. Eliminare i dati di esempio all'interno della tabella 'towns' e 'comuni_dissolve'.
 
