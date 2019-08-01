@@ -54,12 +54,12 @@ class DATABASE_CONFIG {
         'host' => 'localhost',
         'login' => 'postgres',
         'password' => 'postgres',
-        'database' => 'geodbt_sigeo_milano',
+        'database' => 'database',
         'prefix' => '',
         'encoding' => 'utf8'
     );
 
-    public $featureinfo = array(
+    /*public $featureinfo = array(
         'datasource' => 'Database/Postgres',
         'persistent' => false,
         'host' => 'localhost',
@@ -69,5 +69,5 @@ class DATABASE_CONFIG {
         'database' => 'geodbt',
         'prefix' => '',
         'encoding' => 'utf8'
-    );
+    );*/
 }
