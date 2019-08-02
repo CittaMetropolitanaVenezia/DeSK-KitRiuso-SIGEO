@@ -207,6 +207,7 @@ Ext.define('SIO.view.admin.overlaylayers.panel', {
 						draggable: false,
 						menuDisabled: false,
 						header: 'Username',
+						hidden: true,
 						flex: 1,
 						dataIndex: 'username',
 						editor: {
@@ -216,6 +217,7 @@ Ext.define('SIO.view.admin.overlaylayers.panel', {
 					{
 						draggable: false,
 						menuDisabled: false,
+						hidden: true,
 						header: 'Password',
 						flex: 1,
 						readonly: true,
