@@ -7,7 +7,7 @@ Nel 2019 si è evoluto, dando la possibilità di dividere in tematiche(progetti)
 ## Prerequisiti
 - PHP **5.6.x**
 - Apache **2.x** con queste estensioni:
-  - initl
+  - intl
   - mbstring
   - libxml
   - pdo_pgsql
