@@ -396,6 +396,7 @@ Ext.define('SIO.view.submissions.Map', {
                     zoom = this.getBoundsZoom(bounds),
                     center = bounds.getCenter();
             }
+		zoom = 11;
             map.setView(center, zoom, { animate: false });
         };
 
