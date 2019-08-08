@@ -187,7 +187,7 @@ class ProjectsController extends AppController {
 				$result['data'] = $data['Project'];
 			}
 
-			$dirAtt = new Folder($this->Session->read('settings.general.uploadPath').DS.$data['Project']['id'],true);			
+			$dirAtt = new Folder(APP.'attachments'.DS.$data['Project']['id'],true);			
 			mkdir($dirAtt,0777);
 			//mando la notifica
 			/*$emailData = array();
@@ -302,6 +302,7 @@ class ProjectsController extends AppController {
 		//Aggiorno la configurazione
 		$ini_settings = $input;
 		$ini_settings['general.uploadPath'] = APP.'attachments';
+		$ini_settings['map.displayProj'] = 32632;
 		//preparo la configurazione da restituire alla vista
 		$result['Project']['data'] = $input;
 		//Ma ne salvo il json encode a db
