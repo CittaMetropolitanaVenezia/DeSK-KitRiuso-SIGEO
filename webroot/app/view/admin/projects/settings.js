@@ -126,7 +126,8 @@ Ext.define('SIO.view.admin.projects.settings', {
 							xtype: 'textfield',
 							name: 'map.displayProj',
 							fieldLabel: 'displayProj',
-							allowBlank: false,
+							//allowBlank: false,
+							readyOnly: true,
 							anchor: '70%',
 						},
 						{
