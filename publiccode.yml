@@ -1,0 +1,75 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+name: SIGEO
+applicationSuite: Progetto DeSK
+url: 'https://github.com/ProgettoDeSK/KitRiuso-SIGEO'
+landingURL: 'https://github.com/ProgettoDeSK/KitRiuso-SIGEO.git'
+releaseDate: '2019-08-05'
+softwareVersion: '1.0'
+developmentStatus: stable
+softwareType: standalone/web
+platforms:
+  - linux
+  - web
+logo: 'https://progettodesk.it/wp-content/uploads/2018/11/logo_header2.fw_.png'
+categories:
+  - data-collection
+  - data-analytics
+  - data-visualization
+  - collaboration
+  - geographic-information-systems
+  - knowledge-management
+maintenance:
+  type: contract
+  contacts:
+    - name: Luca Celeghin
+      email: informatica@cittametropolitana.ve.it
+      phone: 0412501953
+  contractors:
+    - name: Corvallis S.p.A.
+      website: www.corvallis.it
+      until: '2020-09-30'
+legal:
+  license: GPL-3.0-only
+  mainCopyrightOwner: Città metropolitana di Venezia
+  repoOwner: ProgettoDeSK
+intendedAudience:
+  countries:
+    - it
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - it
+it:
+  riuso:
+    codiceIPA: p_ve
+  conforme:
+    misureMinimeSicurezza: true
+    gdpr: true
+    modelloInteroperabilita: true
+description:
+  it:
+    shortDescription: Sistema di segnalazione territoriale
+    longDescription: >
+      S.I.Geo (Sistema Informativo Geodatabase) è un esempio di strumento
+      concertativo  per la raccolta di segnalazioni e osservazioni da parte dei
+      stakeholders. I partner del progetto DeSK hanno richiesto che tale
+      applicativo fosse evoluto verso un sistema in grado di raccogliere
+      osservazioni in relazione ad un tema di volta in volta personalizzabile:
+      l'amministrazione definisce l'ambito territoriale in cui gli stakeholders
+      possono proporre osservazioni di tipo puntuale, lineare o poligonale dando
+      così origine ad un vero strumento di e-democracy.  
+
+       
+
+      ​
+    localisedName: SIGEO
+    genericName: SIGEO
+    documentation: 'https://github.com/ProgettoDeSK/KitRiuso-SIGEO/blob/master/README.md'
+    features:
+      - Sistema parametrico di osservazioni territoriali
+    videos:
+      - 'https://progettodesk.it/formazione-sigeo-evoluzione/'
