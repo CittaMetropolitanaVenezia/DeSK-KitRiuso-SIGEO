@@ -30,7 +30,7 @@ maintenance:
       phone: 0412501953
   contractors:
     - name: Corvallis S.p.A.
-      website: www.corvallis.it
+      website: http://www.corvallis.it
       until: '2020-09-30'
 legal:
   license: GPL-3.0-only
@@ -62,14 +62,12 @@ description:
       l'amministrazione definisce l'ambito territoriale in cui gli stakeholders
       possono proporre osservazioni di tipo puntuale, lineare o poligonale dando
       così origine ad un vero strumento di e-democracy.  
+      
+      Alcune delle funzionalità del sistema sono visualizzabili in
+      [questo](https://progettodesk.it/formazione-sigeo-evoluzione/) video.
 
-       
-
-      ​
     localisedName: SIGEO
     genericName: SIGEO
     documentation: 'https://github.com/ProgettoDeSK/KitRiuso-SIGEO/blob/master/README.md'
     features:
       - Sistema parametrico di osservazioni territoriali
-    videos:
-      - 'https://progettodesk.it/formazione-sigeo-evoluzione/'
