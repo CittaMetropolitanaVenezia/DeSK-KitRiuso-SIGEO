@@ -1,0 +1,187 @@
+<p>                            </p>
+<table>
+<tbody>
+<tr>
+<td width="253">
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+</td>
+<td width="267">
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong>SIGEO</strong></p>
+<p><strong>Sistema Informativo Geodatabase</strong></p>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><a name="_Toc81971775"></a><a name="_Toc77746299"></a><a name="_Toc465074998"></a><a name="_Toc461328694"></a> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<h1> </h1>
+<p>Sommario</p>
+<p><a href="#_Toc15900507">1 INTRODUZIONE. 3</a></p>
+<p><a href="#_Toc15900508">2 TERMINOLOGIA E DEFINIZIONI 3</a></p>
+<p><a href="#_Toc15900509">3 PREREQUISITI 3</a></p>
+<p><a href="#_Toc15900510">3.1 Infrastruttura. 3</a></p>
+<p><a href="#_Toc15900511">3.2 Kit di riuso.. 3</a></p>
+<p><a href="#_Toc15900512">3.3 Pre-requisiti, vincoli e criticità.. 3</a></p>
+<p><a href="#_Toc15900513">4 CONFIGURAZIONE. 4</a></p>
+<p><a href="#_Toc15900514">4.1 Configurazione del sistema.. 4</a></p>
+<p><a href="#_Toc15900515">4.2 Configurazione elementi grafici 4</a></p>
+<p><a href="#_Toc15900516">5 Installazione. 4</a></p>
+<p><a href="#_Toc15900517">6 Creazione di un progetto.. 5</a></p>
+<p> </p>
+<p><strong><br /> </strong></p>
+<h1><a name="_Toc15900507"></a><a name="_Toc15896602"></a>1 INTRODUZIONE</h1>
+<p> </p>
+<p>Il presente documento vuole fornire le informazioni necessarie per l’installazione la configurazione e la parametrizzazione dell’applicativo SIGEO – Sistema Informativo Geodatabase.</p>
+<p>Sigeo è un sistema informativo territoriale per l'inserimento di osservazioni territoriali georiferite. Nel 2019 si è evoluto, dando la possibilità di dividere in tematiche(progetti) le osservazioni.</p>
+<h1><a name="_Toc15900508"></a><a name="_Toc15896603"></a>2 TERMINOLOGIA E DEFINIZIONI</h1>
+<ul>
+<li>WMS: Per Web Map Service(WMS) si intende una specifica tecnica definita dall’OGC, che produce dinamicamente mappe di dati spazialmente riferiti a partire da informazioni geografiche. Questo standard internazionale definisce una "mappa" come rappresentazione di informazioni geografiche restituendo un'immagine digitale idonea ad essere visualizzata su browser web.</li>
+</ul>
+<h1><a name="_Toc15900509"></a><a name="_Toc15896604"></a>3 PREREQUISITI</h1>
+<p> </p>
+<h2><a name="_Toc15900510"></a><a name="_Toc15896605"></a>3.1 Infrastruttura</h2>
+<p>Struttura mono-server con Ubuntu avente all’interno:</p>
+<ul>
+<li>Apache 2.x</li>
+<li>Database Postgres 9.x(consigliata 9.5) con codifica UTF-8 e Postgis 2.x</li>
+<li>Server di posta</li>
+</ul>
+<h2><a name="_Toc15900511"></a><a name="_Toc15896606"></a>3.2 Kit di riuso</h2>
+<p> </p>
+<p>Cartelle:</p>
+<ul>
+<li>Attachments: cartella dove vengono salvati tutti gli allegati;</li>
+<li>Config: cartella contenente impostazioni generali, di connessione e specifiche dei progetti;</li>
+<li>Controller: cartella che contiene tutti i Controller lato back-end;</li>
+<li>Model: cartella che contiene tutti i Model lato back-end;</li>
+<li>View: cartella che contiene tutte le View lato back-end;</li>
+<li>Webroot: cartella contenente il front-end e tutti i file accessibili.</li>
+</ul>
+<p>Database:</p>
+<ul>
+<li>File dump.sql contenente dati di prova.</li>
+</ul>
+<p> </p>
+<p>Elementi grafici:</p>
+<ul>
+<li>Webroot/resources/images: tutte le icone riguardanti i pulsanti dell’applicativo;</li>
+<li>Webroot/resources/login:
+<ul>
+<li>png: 483x135px, immagine della schermata di login</li>
+<li>png: 850x135px, immagine della schermata di trattamento dati</li>
+</ul>
+</li>
+<li>Webroot/resources/logos:
+<ul>
+<li>jpg: 1800x237px, immagine di background dell’header dell’applicativo</li>
+<li>Header-left.png: 545x70px, header in alto a sinistra</li>
+<li>Header-right.png: 478x70px, header in alto a destra</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h2><a name="_Toc15900512"></a><a name="_Toc15896607"></a>3.3 Pre-requisiti, vincoli e criticità</h2>
+<p>Webserver:</p>
+<ul>
+<li>PHP 5.6.x</li>
+<li>Almeno un base layer (come OpenStreetMap)</li>
+<li>Tematismi WMS da esporre in mappa</li>
+<li>Estensioni intl, mbstring, libxml, pdo_pgsql, zip, zlib installate</li>
+</ul>
+<p>Cartelle aventi tutti i permessi:</p>
+<ul>
+<li>Attachments</li>
+<li>Config</li>
+<li>Tmp</li>
+<li>Webroot</li>
+</ul>
+<p> </p>
+<h1><a name="_Toc15900513"></a><a name="_Toc15896608"></a>4 CONFIGURAZIONE</h1>
+<p> </p>
+<h2><a name="_Toc15900514"></a><a name="_Toc15896609"></a>4.1 Configurazione del sistema</h2>
+<ol>
+<li>Scaricare la cartella del progetto, posizionarla nella document root del web server;</li>
+<li>Restaurare il file dump.sql all'interno di un database vuoto;</li>
+<li>Popolare la tabella ‘towns’ con i dati delle città desiderate, senza eliminare quelle già presenti;</li>
+<li>Popolare la tabella ‘comuni_dissolve’ con un record avente come geometria la UNION delle geometrie caricate precedentemente;</li>
+<li>Se non è presente, creare un collegamento alla cartella temporanea del web server all'interno della document root;</li>
+<li>Assicurarsi che le cartelle 'attachments', 'Config', 'tmp', 'webroot' e sottocartelle abbiano tutti i permessi necessari;</li>
+<li>Aprire il file <em>database.php</em> all’interno della cartella Config e configurare la connessione a DB.</li>
+</ol>
+<h2><a name="_Toc15900515"></a><a name="_Toc15896610"></a>4.2 Configurazione elementi grafici</h2>
+<p>   Seguire il path delle immagini indicato nella sezione 3.2 e cambiare le immagini di default con quelle desiderate, prestando attenzione a mantenere le stesse dimensioni delle precedenti.    </p>
+<p>           </p>
+<h1><a name="_Toc15900516"></a><a name="_Toc15896611"></a>5 Installazione</h1>
+<p> </p>
+<ul>
+<li>Una volta configurato il sistema, aprire il file <em>php</em>all'interno della cartella Config e cambiare il valore del debug da 0 a 2:
+<ul>
+<li>Configure::write('debug', 0) -&gt;  Configure::write('debug', 2);</li>
+</ul>
+</li>
+<li>Accedere all’applicativo dall’url del server utilizzato ed eseguire il primo login:
+<ul>
+<li>Username: sigeo</li>
+<li>Password: sigeo2019;</li>
+</ul>
+</li>
+<li>Aprire nuovamente il file <em>php</em> e cambiare il valore del debug da 2 a 0;</li>
+</ul>
+<p> </p>
+<ul>
+<li>Aggiornare la pagina, effettuare il login, selezionare il progetto di esempio e caricarlo;</li>
+<li>Dopo preso mano con l'applicativo, accedere al pannello di amministrazione dei progetti e creare il primo vero progetto. Un progetto per essere funzionale ha bisogno di tutti i campi obbligatori delle sue impostazioni, oltre ad almeno un baselayer inserito e un tipo di osservazione. Si può accedere alle impostazioni del progetto appena creato tramite l'apposito pulsante sulla griglia dei progetti;</li>
+<li>Creare ed associare i vari enti caricati/creati e l'utente sigeo al nuovo progetto;</li>
+<li>Eseguire il login con lo stesso utente al nuovo progetto, caricarlo e, se desiderato, cancellare il progetto di esempio;</li>
+<li>Eliminare i dati di esempio all'interno della tabella 'towns' e ‘comuni_dissolve’.</li>
+</ul>
+<h1><a name="_Toc15900517"></a><a name="_Toc15896612"></a>6 Creazione di un progetto</h1>
+<ol>
+<li>Accedere alla griglia di amministrazione dei progetti;</li>
+<li>Premere il tasto ‘+’, assegnare un nome e una descrizione e salvarlo;</li>
+<li>Accedere alle impostazioni del progetto tramite il pulsante ‘ingranaggio’ sulla riga del progetto</li>
+<li>Compilare ogni campo presente (Il percorso upload verrà compilato automaticamente);</li>
+<li>Inserire almeno un base layer (Es. OpenStreetMap) e salvare le impostazioni</li>
+</ol>
+<p>(il progetto diventerà attivo);</p>
+<ol start="6">
+<li>Associare utenti e enti/comuni desiderati al progetto creato;</li>
+</ol>
+<p>Per utilizzare il nuovo progetto basterà eseguire il login con uno degli utenti associati ad esso e caricarlo.</p>
+<p><strong>Per maggiori informazioni riguardo alla creazione di un progetto, visualizzare la guida apposita.</strong></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<h1> </h1>
