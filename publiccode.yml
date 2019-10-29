@@ -5,8 +5,8 @@
 publiccodeYmlVersion: '0.2'
 name: SIGEO
 applicationSuite: Progetto DeSK
-url: 'https://github.com/ProgettoDeSK/KitRiuso-SIGEO'
-landingURL: 'https://github.com/ProgettoDeSK/KitRiuso-SIGEO.git'
+url: 'https://github.com/CittaMetropolitanaVenezia/DeSK-KitRiuso-SIGEO'
+landingURL: 'https://github.com/CittaMetropolitanaVenezia/DeSK-KitRiuso-SIGEO.git'
 releaseDate: '2019-08-05'
 softwareVersion: '1.0'
 developmentStatus: stable
@@ -55,6 +55,13 @@ description:
   it:
     shortDescription: Sistema di segnalazione territoriale
     longDescription: >
+      Applicativo che fa parte del progetto DeSK (DEcision support System and Knowledge territoriale)  
+      al quale hanno collaborato città Metropolitana di Milano, Città Metropolitana di Genova, 
+      Provincia di Taranto e Città Metropolitana di Venezia con il supporto tecnico
+      dell'azienda Corvallis S.p.A. Il progetto nasce come riuso di quanto sviluppato 
+      da Città Metropolitana di Milano in precedente esperienza. 
+      Consta di un insieme di applicativi finalizzati alla concertazione e all'arricchimento
+      dell'informazione e della conoscenza territoriale.
       S.I.Geo (Sistema Informativo Geodatabase) è un esempio di strumento
       concertativo  per la raccolta di segnalazioni e osservazioni da parte dei
       stakeholders. I partner del progetto DeSK hanno richiesto che tale
@@ -69,6 +76,6 @@ description:
 
     localisedName: SIGEO
     genericName: SIGEO
-    documentation: 'https://github.com/ProgettoDeSK/KitRiuso-SIGEO/blob/master/README.md'
+    documentation: 'https://github.com/CittaMetropolitanaVenezia/DeSK-KitRiuso-SIGEO/blob/master/README.md'
     features:
       - Sistema parametrico di osservazioni territoriali
