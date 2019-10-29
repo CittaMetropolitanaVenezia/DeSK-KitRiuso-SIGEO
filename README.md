@@ -1,6 +1,8 @@
 ## SIGEO - Sistema Informativo GeoDatabase
 Sigeo è un sistema informativo territoriale per l'inserimento di osservazioni territoriali georiferite. 
 Nel 2019 si è evoluto, dando la possibilità di dividere in tematiche(progetti) le osservazioni.
+S.I.Geo è un esempio di strumento concertativo realizzato dalla Città Metropolitana di Milano per la raccolta di segnalazioni e osservazioni da parte dei Comuni appartenenti al territorio di Città metropolitana di Milano. Nell'ambito del progetto DeSK tale applicativo è stato reingegnerizzato ottenendo  un sistema in grado di raccogliere osservazioni in relazione ad un tema di volta in volta personalizzabile. SIGEO consente all'ente che lo mette a disposizione di collezionare dati ed informazioni utili per la correzione dei quadri geografici sottoposti ad osservazione territoriale. 
+
 ## Tech/framework utilizzati
 - [Ext JS](https://www.sencha.com/products/extjs/)
 - [CakePHP](https://cakephp.org/)
