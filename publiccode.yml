@@ -35,7 +35,7 @@ maintenance:
 legal:
   license: GPL-3.0-only
   mainCopyrightOwner: Città metropolitana di Venezia
-  repoOwner: ProgettoDeSK
+  repoOwner: CittaMetropolitanaVenezia
 intendedAudience:
   countries:
     - it
